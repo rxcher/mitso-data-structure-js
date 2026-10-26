@@ -1,0 +1,32 @@
+{
+  "name": "mitso-data-structure-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KalinkinFiz/mitso-data-structure-js"
+  },
+  "keywords": [
+    "mitso",
+    "tasks"
+  ],
+  "author": "KalinkinFiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KalinkinFiz/mitso-data-structure-js/issues"
+  },
+  "homepage": "https://github.com/KalinkinFiz/mitso-data-structure-js#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0",
+    "sinon": "^11.1.2"
+  }
+}
