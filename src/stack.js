@@ -1,30 +1,30 @@
 import { NotImplementedError } from "../extensions/index.js";
 
 /**
- * Implement the Stack with a given interface via array.
- *
- * @example
- * const stack = new Stack();
- *
- * stack.push(1); // adds the element to the stack
- * stack.peek(); // returns the peek, but doesn't delete it, returns 1
- * stack.pop(); // returns the top element from stack and deletes it, returns 1
- * stack.pop(); // undefined
- *
+ * Implement simple stack using array
  */
 export default class Stack {
-  push(/* element */) {
-    throw new NotImplementedError("Not implemented");
-    // remove line with error and write your code here
+  constructor() {
+    // Создаем пустой массив для хранения элементов
+    this.stack = [];
+  }
+
+  push(element) {
+    // Добавляем элемент в конец массива
+    this.stack.push(element);
   }
 
   pop() {
-    throw new NotImplementedError("Not implemented");
-    // remove line with error and write your code here
+    // Удаляем и возвращаем последний элемент
+    return this.stack.pop();
   }
 
   peek() {
-    throw new NotImplementedError("Not implemented");
-    // remove line with error and write your code here
+    // Возвращаем последний элемент, не удаляя его
+    // Если стек пуст, возвращаем undefined
+    if (this.stack.length === 0) {
+      return undefined;
+    }
+    return this.stack[this.stack.length - 1];
   }
 }
