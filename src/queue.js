@@ -24,7 +24,6 @@ export default class Queue {
     const value = this.head.value;
     this.head = this.head.next;
     
-    // Если очередь опустела, обнуляем и хвост
     if (this.head === null) {
       this.tail = null;
     }
